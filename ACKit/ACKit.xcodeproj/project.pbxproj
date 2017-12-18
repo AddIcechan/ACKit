@@ -14,8 +14,8 @@
 		409ACE541FDE6E3500C3B72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409ACE521FDE6E3500C3B72D /* LaunchScreen.storyboard */; };
 		409ACE571FDE6E3500C3B72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE561FDE6E3500C3B72D /* main.m */; };
 		409ACE681FDE75BC00C3B72D /* UIViewController+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE671FDE75BC00C3B72D /* UIViewController+ACKit.m */; };
-		409ACE701FE7AFDB00C3B72D /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE6F1FE7AFDB00C3B72D /* UIDevice+Extension.m */; };
-		409ACE741FE7B7A600C3B72D /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE731FE7B7A600C3B72D /* NSString+Extension.m */; };
+		409ACE701FE7AFDB00C3B72D /* UIDevice+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE6F1FE7AFDB00C3B72D /* UIDevice+ACKit.m */; };
+		409ACE741FE7B7A600C3B72D /* NSString+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE731FE7B7A600C3B72D /* NSString+ACKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,11 @@
 		409ACE561FDE6E3500C3B72D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		409ACE661FDE75BC00C3B72D /* UIViewController+ACKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ACKit.h"; sourceTree = "<group>"; };
 		409ACE671FDE75BC00C3B72D /* UIViewController+ACKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ACKit.m"; sourceTree = "<group>"; };
-		409ACE6E1FE7AFDB00C3B72D /* UIDevice+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
-		409ACE6F1FE7AFDB00C3B72D /* UIDevice+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
-		409ACE721FE7B7A600C3B72D /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
-		409ACE731FE7B7A600C3B72D /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		409ACE6E1FE7AFDB00C3B72D /* UIDevice+ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ACKit.h"; sourceTree = "<group>"; };
+		409ACE6F1FE7AFDB00C3B72D /* UIDevice+ACKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ACKit.m"; sourceTree = "<group>"; };
+		409ACE721FE7B7A600C3B72D /* NSString+ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ACKit.h"; sourceTree = "<group>"; };
+		409ACE731FE7B7A600C3B72D /* NSString+ACKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACKit.m"; sourceTree = "<group>"; };
+		409ACE751FE7C84400C3B72D /* ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 				409ACE481FDE6E3500C3B72D /* AppDelegate.m */,
 				409ACE4A1FDE6E3500C3B72D /* ViewController.h */,
 				409ACE4B1FDE6E3500C3B72D /* ViewController.m */,
+				409ACE751FE7C84400C3B72D /* ACKit.h */,
 				409ACE5D1FDE74D600C3B72D /* Categories */,
 				409ACE4D1FDE6E3500C3B72D /* Main.storyboard */,
 				409ACE501FDE6E3500C3B72D /* Assets.xcassets */,
@@ -103,8 +105,8 @@
 		409ACE6D1FE7AFA600C3B72D /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
-				409ACE6E1FE7AFDB00C3B72D /* UIDevice+Extension.h */,
-				409ACE6F1FE7AFDB00C3B72D /* UIDevice+Extension.m */,
+				409ACE6E1FE7AFDB00C3B72D /* UIDevice+ACKit.h */,
+				409ACE6F1FE7AFDB00C3B72D /* UIDevice+ACKit.m */,
 			);
 			path = UIDevice;
 			sourceTree = "<group>";
@@ -112,8 +114,8 @@
 		409ACE711FE7B77D00C3B72D /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				409ACE721FE7B7A600C3B72D /* NSString+Extension.h */,
-				409ACE731FE7B7A600C3B72D /* NSString+Extension.m */,
+				409ACE721FE7B7A600C3B72D /* NSString+ACKit.h */,
+				409ACE731FE7B7A600C3B72D /* NSString+ACKit.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -190,8 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */,
-				409ACE741FE7B7A600C3B72D /* NSString+Extension.m in Sources */,
-				409ACE701FE7AFDB00C3B72D /* UIDevice+Extension.m in Sources */,
+				409ACE741FE7B7A600C3B72D /* NSString+ACKit.m in Sources */,
+				409ACE701FE7AFDB00C3B72D /* UIDevice+ACKit.m in Sources */,
 				409ACE571FDE6E3500C3B72D /* main.m in Sources */,
 				409ACE491FDE6E3500C3B72D /* AppDelegate.m in Sources */,
 				409ACE681FDE75BC00C3B72D /* UIViewController+ACKit.m in Sources */,
@@ -268,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -317,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

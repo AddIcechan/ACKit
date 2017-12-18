@@ -6,7 +6,7 @@
 //  Copyright © 2017年 ADDICE. All rights reserved.
 //
 
-#import "UIDevice+Extension.h"
+#import "UIDevice+ACKit.h"
 
 BOOL iPhoneX(void) {
     static BOOL result;
