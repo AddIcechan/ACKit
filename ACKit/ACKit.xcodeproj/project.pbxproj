@@ -15,6 +15,7 @@
 		409ACE571FDE6E3500C3B72D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE561FDE6E3500C3B72D /* main.m */; };
 		409ACE681FDE75BC00C3B72D /* UIViewController+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE671FDE75BC00C3B72D /* UIViewController+ACKit.m */; };
 		409ACE701FE7AFDB00C3B72D /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE6F1FE7AFDB00C3B72D /* UIDevice+Extension.m */; };
+		409ACE741FE7B7A600C3B72D /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE731FE7B7A600C3B72D /* NSString+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		409ACE671FDE75BC00C3B72D /* UIViewController+ACKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ACKit.m"; sourceTree = "<group>"; };
 		409ACE6E1FE7AFDB00C3B72D /* UIDevice+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
 		409ACE6F1FE7AFDB00C3B72D /* UIDevice+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
+		409ACE721FE7B7A600C3B72D /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		409ACE731FE7B7A600C3B72D /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		409ACE5D1FDE74D600C3B72D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				409ACE711FE7B77D00C3B72D /* NSString */,
 				409ACE6D1FE7AFA600C3B72D /* UIDevice */,
 				409ACE621FDE75AD00C3B72D /* UIViewController */,
 			);
@@ -103,6 +107,15 @@
 				409ACE6F1FE7AFDB00C3B72D /* UIDevice+Extension.m */,
 			);
 			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		409ACE711FE7B77D00C3B72D /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				409ACE721FE7B7A600C3B72D /* NSString+Extension.h */,
+				409ACE731FE7B7A600C3B72D /* NSString+Extension.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */,
+				409ACE741FE7B7A600C3B72D /* NSString+Extension.m in Sources */,
 				409ACE701FE7AFDB00C3B72D /* UIDevice+Extension.m in Sources */,
 				409ACE571FDE6E3500C3B72D /* main.m in Sources */,
 				409ACE491FDE6E3500C3B72D /* AppDelegate.m in Sources */,
