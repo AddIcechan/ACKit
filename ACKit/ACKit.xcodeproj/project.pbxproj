@@ -16,6 +16,7 @@
 		409ACE681FDE75BC00C3B72D /* UIViewController+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE671FDE75BC00C3B72D /* UIViewController+ACKit.m */; };
 		409ACE701FE7AFDB00C3B72D /* UIDevice+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE6F1FE7AFDB00C3B72D /* UIDevice+ACKit.m */; };
 		409ACE741FE7B7A600C3B72D /* NSString+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE731FE7B7A600C3B72D /* NSString+ACKit.m */; };
+		409ACE791FE8B55E00C3B72D /* UIAlertController+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE781FE8B55E00C3B72D /* UIAlertController+ACKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		409ACE721FE7B7A600C3B72D /* NSString+ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ACKit.h"; sourceTree = "<group>"; };
 		409ACE731FE7B7A600C3B72D /* NSString+ACKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACKit.m"; sourceTree = "<group>"; };
 		409ACE751FE7C84400C3B72D /* ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACKit.h; sourceTree = "<group>"; };
+		409ACE771FE8B55E00C3B72D /* UIAlertController+ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+ACKit.h"; sourceTree = "<group>"; };
+		409ACE781FE8B55E00C3B72D /* UIAlertController+ACKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+ACKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		409ACE5D1FDE74D600C3B72D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				409ACE761FE8B53D00C3B72D /* UIAlertController */,
 				409ACE711FE7B77D00C3B72D /* NSString */,
 				409ACE6D1FE7AFA600C3B72D /* UIDevice */,
 				409ACE621FDE75AD00C3B72D /* UIViewController */,
@@ -118,6 +122,15 @@
 				409ACE731FE7B7A600C3B72D /* NSString+ACKit.m */,
 			);
 			path = NSString;
+			sourceTree = "<group>";
+		};
+		409ACE761FE8B53D00C3B72D /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				409ACE771FE8B55E00C3B72D /* UIAlertController+ACKit.h */,
+				409ACE781FE8B55E00C3B72D /* UIAlertController+ACKit.m */,
+			);
+			path = UIAlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */,
+				409ACE791FE8B55E00C3B72D /* UIAlertController+ACKit.m in Sources */,
 				409ACE741FE7B7A600C3B72D /* NSString+ACKit.m in Sources */,
 				409ACE701FE7AFDB00C3B72D /* UIDevice+ACKit.m in Sources */,
 				409ACE571FDE6E3500C3B72D /* main.m in Sources */,

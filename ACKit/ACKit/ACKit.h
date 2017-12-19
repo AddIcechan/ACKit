@@ -10,7 +10,9 @@
 #define ACKit_h
 
 #import "NSString+ACKit.h"
+
 #import "UIDevice+ACKit.h"
 #import "UIViewController+ACKit.h"
+#import "UIAlertController+ACKit.h"
 
 #endif /* ACKit_h */
