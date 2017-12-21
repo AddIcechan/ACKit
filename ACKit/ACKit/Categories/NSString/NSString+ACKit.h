@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
 @interface NSString (AC_SubStringExtension)
 
 - (NSString *)ac_substringToIndex:(NSUInteger)to;
@@ -18,4 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)ac_substringWithRange:(NSRange)range;
 
 @end
+
+@interface NSString (AC_SizeExtension)
+
+- (CGSize)ac_sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
+
+@end
+
 NS_ASSUME_NONNULL_END

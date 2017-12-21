@@ -29,3 +29,16 @@
 }
 
 @end
+
+@implementation NSString (AC_SizeExtension)
+
+- (CGSize)ac_sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize  {
+    if (!font)  return CGSizeZero;
+    
+    return [self boundingRectWithSize:maxSize
+                              options:NSStringDrawingUsesLineFragmentOrigin
+                           attributes:@{NSFontAttributeName: font}
+                              context:nil].size;
+}
+
+@end
