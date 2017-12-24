@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-UIKIT_EXTERN inline BOOL iPhoneX(void);
+UIKIT_EXTERN BOOL iPhone4s(void);
+UIKIT_EXTERN BOOL iPhoneSE(void);
+UIKIT_EXTERN BOOL iPhone8(void);
+UIKIT_EXTERN BOOL iPhone8Plus(void);
+UIKIT_EXTERN BOOL iPhoneX(void);
 
 @interface UIDevice (Extension)
 
