@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4068AB8320654DB0009698DD /* ACGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4068AB8220654DB0009698DD /* ACGuideManager.m */; };
 		409ACE491FDE6E3500C3B72D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE481FDE6E3500C3B72D /* AppDelegate.m */; };
 		409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE4B1FDE6E3500C3B72D /* ViewController.m */; };
 		409ACE4F1FDE6E3500C3B72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409ACE4D1FDE6E3500C3B72D /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4068AB8120654DB0009698DD /* ACGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGuideManager.h; sourceTree = "<group>"; };
+		4068AB8220654DB0009698DD /* ACGuideManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGuideManager.m; sourceTree = "<group>"; };
 		409ACE441FDE6E3500C3B72D /* ACKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409ACE471FDE6E3500C3B72D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		409ACE481FDE6E3500C3B72D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +58,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4068AB8020654D8C009698DD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4068AB8420654DB8009698DD /* GuideManager */,
+			);
+			name = Tools;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4068AB8420654DB8009698DD /* GuideManager */ = {
+			isa = PBXGroup;
+			children = (
+				4068AB8120654DB0009698DD /* ACGuideManager.h */,
+				4068AB8220654DB0009698DD /* ACGuideManager.m */,
+			);
+			path = GuideManager;
+			sourceTree = "<group>";
+		};
 		409ACE3B1FDE6E3500C3B72D = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +100,7 @@
 				409ACE4A1FDE6E3500C3B72D /* ViewController.h */,
 				409ACE4B1FDE6E3500C3B72D /* ViewController.m */,
 				409ACE751FE7C84400C3B72D /* ACKit.h */,
+				4068AB8020654D8C009698DD /* Tools */,
 				409ACE5D1FDE74D600C3B72D /* Categories */,
 				409ACE4D1FDE6E3500C3B72D /* Main.storyboard */,
 				409ACE501FDE6E3500C3B72D /* Assets.xcassets */,
@@ -217,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4068AB8320654DB0009698DD /* ACGuideManager.m in Sources */,
 				409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */,
 				40F3F0A41FEA032A00573FAA /* UIView+ACKit.m in Sources */,
 				409ACE791FE8B55E00C3B72D /* UIAlertController+ACKit.m in Sources */,
