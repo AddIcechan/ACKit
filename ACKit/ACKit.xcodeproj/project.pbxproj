@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		404EC9222073CD13007A739F /* NSArray+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 404EC9212073CD13007A739F /* NSArray+ACKit.m */; };
 		4068AB8320654DB0009698DD /* ACGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4068AB8220654DB0009698DD /* ACGuideManager.m */; };
 		409ACE491FDE6E3500C3B72D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE481FDE6E3500C3B72D /* AppDelegate.m */; };
 		409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE4B1FDE6E3500C3B72D /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		404EC9202073CD13007A739F /* NSArray+ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ACKit.h"; sourceTree = "<group>"; };
+		404EC9212073CD13007A739F /* NSArray+ACKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ACKit.m"; sourceTree = "<group>"; };
 		4068AB8120654DB0009698DD /* ACGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGuideManager.h; sourceTree = "<group>"; };
 		4068AB8220654DB0009698DD /* ACGuideManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGuideManager.m; sourceTree = "<group>"; };
 		409ACE441FDE6E3500C3B72D /* ACKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		404EC91F2073CCF2007A739F /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				404EC9202073CD13007A739F /* NSArray+ACKit.h */,
+				404EC9212073CD13007A739F /* NSArray+ACKit.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
 		4068AB8020654D8C009698DD /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,7 @@
 		409ACE5D1FDE74D600C3B72D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				404EC91F2073CCF2007A739F /* NSArray */,
 				40F3F0A11FEA030F00573FAA /* UIView */,
 				409ACE761FE8B53D00C3B72D /* UIAlertController */,
 				409ACE711FE7B77D00C3B72D /* NSString */,
@@ -246,6 +259,7 @@
 				409ACE741FE7B7A600C3B72D /* NSString+ACKit.m in Sources */,
 				409ACE701FE7AFDB00C3B72D /* UIDevice+ACKit.m in Sources */,
 				409ACE571FDE6E3500C3B72D /* main.m in Sources */,
+				404EC9222073CD13007A739F /* NSArray+ACKit.m in Sources */,
 				409ACE491FDE6E3500C3B72D /* AppDelegate.m in Sources */,
 				409ACE681FDE75BC00C3B72D /* UIViewController+ACKit.m in Sources */,
 			);
