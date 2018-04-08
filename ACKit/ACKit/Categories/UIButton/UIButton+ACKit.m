@@ -25,6 +25,33 @@ static NSString * const kColorForReserved = @"UIControlStateReserved";
 
 @implementation UIButton (ACKit)
 
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        
+        [self swizzleClass:class originalSelector:@selector(setSelected:) swizzledSelector:@selector(ac_setSelected:)];
+        
+        [self swizzleClass:class originalSelector:@selector(setHighlighted:) swizzledSelector:@selector(ac_setHighlighted:)];
+        
+        [self swizzleClass:class originalSelector:@selector(setEnabled:) swizzledSelector:@selector(ac_setEnabled:)];
+        
+    });
+}
+
++ (void)swizzleClass:(Class)class originalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector {
+    
+    Method originalMethod = class_getInstanceMethod(class, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+    
+    BOOL success = class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+    if (success) {
+        class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+    } else {
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
+}
+
 - (void)ac_setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state {
     
     if (!backgroundColor) return;
@@ -44,28 +71,36 @@ static NSString * const kColorForReserved = @"UIControlStateReserved";
     return self.bgColorDict[key];
 }
 
-- (void)setSelected:(BOOL)selected {
-    [super setSelected:selected];
-//    NSString *key = [self fetchBgColorKey:(YES == selected ? UIControlStateSelected : UIControlStateNormal)];
-//    UIColor *bgColor = self.bgColorDict[key];
-//    [self setBackgroundColor:bgColor];
-    NSLog(@"%s",__func__);
+- (void)ac_setSelected:(BOOL)selected {
+    [self ac_setSelected:selected];
+    NSString *key = [self fetchBgColorKey:(YES == selected ? UIControlStateSelected : UIControlStateNormal)];
+    UIColor *bgColor = self.bgColorDict[key];
+    if (bgColor) [self setBackgroundColor:bgColor];
 }
 
-- (void)setHighlighted:(BOOL)highlighted {
-    [super setHighlighted:highlighted];
-    NSLog(@"%s",__func__);
-//    NSString *key = [self fetchBgColorKey: (YES == highlighted ? UIControlStateHighlighted : UIControlStateNormal)];
-//    UIColor *bgColor = self.bgColorDict[key];
-//    [self setBackgroundColor:bgColor];
+- (void)ac_setHighlighted:(BOOL)highlighted {
+    [self ac_setHighlighted:highlighted];
     
+    if (highlighted) {
+        NSString *key = [self fetchBgColorKey: UIControlStateHighlighted];
+        UIColor *bgColor = self.bgColorDict[key];
+        if (bgColor) [self setBackgroundColor:bgColor];
+    } else {
+        if (!self.isSelected) {
+            NSString *key = [self fetchBgColorKey: UIControlStateNormal];
+            UIColor *bgColor = self.bgColorDict[key];
+            if (bgColor) [self setBackgroundColor:bgColor];
+        }
+    }
+
 }
 
-- (void)setEnabled:(BOOL)enabled {
-    [super setEnabled:enabled];
+- (void)ac_setEnabled:(BOOL)enabled {
+    [self ac_setEnabled:enabled];
     NSString *key = [self fetchBgColorKey:(NO == enabled ? UIControlStateDisabled : UIControlStateNormal)];
     UIColor *bgColor = self.bgColorDict[key];
-    [self setBackgroundColor:bgColor];
+    if (bgColor) [self setBackgroundColor:bgColor];
+    
 }
 
 - (NSMutableDictionary *)bgColorDict {
