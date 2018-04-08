@@ -24,20 +24,21 @@ static NSString * const kColorForReserved = @"UIControlStateReserved";
 @end
 
 @implementation UIButton (ACKit)
-
+/* 
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         Class class = [self class];
         
         [self swizzleClass:class originalSelector:@selector(setSelected:) swizzledSelector:@selector(ac_setSelected:)];
-        
+
         [self swizzleClass:class originalSelector:@selector(setHighlighted:) swizzledSelector:@selector(ac_setHighlighted:)];
-        
+
         [self swizzleClass:class originalSelector:@selector(setEnabled:) swizzledSelector:@selector(ac_setEnabled:)];
         
     });
 }
+ */
 
 + (void)swizzleClass:(Class)class originalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector {
     
@@ -60,10 +61,15 @@ static NSString * const kColorForReserved = @"UIControlStateReserved";
     
     NSString *key = [self fetchBgColorKey:state];
     self.bgColorDict[key] = backgroundColor;
-    NSLog(@"%@",self.bgColorDict);
-    if (state == UIControlStateNormal) {
-        self.backgroundColor = backgroundColor;
-    }
+    
+    UIImage *bgImgColor = [self imageWithColor:backgroundColor];
+    
+    [self setBackgroundImage:bgImgColor forState:state];
+    
+//    NSLog(@"%@",self.bgColorDict);
+//    if (state == UIControlStateNormal) {
+//        self.backgroundColor = backgroundColor;
+//    }
 }
 
 - (UIColor *)ac_backgroundColorForState:(UIControlState)state {
@@ -158,5 +164,7 @@ static NSString * const kColorForReserved = @"UIControlStateReserved";
 }
 
 @end
+
+
 
 

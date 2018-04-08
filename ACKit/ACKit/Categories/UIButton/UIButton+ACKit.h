@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIButton (ACKit)
 
 /**
- 设置对应的 UIControlState 的 背景色，目前只针对 selected 和 highlighted
+ 设置对应的 UIControlState 的 背景色，内部是通过 setBackgroundImage:forState 来实现
 
  @param backgroundColor 所设置的background 可为nil
  @param state 对应的 UIControlState
