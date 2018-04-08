@@ -13,6 +13,7 @@
 #import "NSArray+ACKit.h"
 
 #import "UIDevice+ACKit.h"
+#import "UIButton+ACKit.h"
 #import "UIViewController+ACKit.h"
 #import "UIAlertController+ACKit.h"
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		404EC9222073CD13007A739F /* NSArray+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 404EC9212073CD13007A739F /* NSArray+ACKit.m */; };
 		4068AB8320654DB0009698DD /* ACGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4068AB8220654DB0009698DD /* ACGuideManager.m */; };
+		4093E6CF2079DC7F00D833FB /* UIButton+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4093E6CE2079DC7F00D833FB /* UIButton+ACKit.m */; };
 		409ACE491FDE6E3500C3B72D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE481FDE6E3500C3B72D /* AppDelegate.m */; };
 		409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409ACE4B1FDE6E3500C3B72D /* ViewController.m */; };
 		409ACE4F1FDE6E3500C3B72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409ACE4D1FDE6E3500C3B72D /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 		404EC9212073CD13007A739F /* NSArray+ACKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ACKit.m"; sourceTree = "<group>"; };
 		4068AB8120654DB0009698DD /* ACGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGuideManager.h; sourceTree = "<group>"; };
 		4068AB8220654DB0009698DD /* ACGuideManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGuideManager.m; sourceTree = "<group>"; };
+		4093E6CD2079DC7F00D833FB /* UIButton+ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ACKit.h"; sourceTree = "<group>"; };
+		4093E6CE2079DC7F00D833FB /* UIButton+ACKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ACKit.m"; sourceTree = "<group>"; };
 		409ACE441FDE6E3500C3B72D /* ACKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409ACE471FDE6E3500C3B72D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		409ACE481FDE6E3500C3B72D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +91,15 @@
 			path = GuideManager;
 			sourceTree = "<group>";
 		};
+		4093E6CC2079DC5500D833FB /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				4093E6CD2079DC7F00D833FB /* UIButton+ACKit.h */,
+				4093E6CE2079DC7F00D833FB /* UIButton+ACKit.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		409ACE3B1FDE6E3500C3B72D = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,7 @@
 		409ACE5D1FDE74D600C3B72D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4093E6CC2079DC5500D833FB /* UIButton */,
 				404EC91F2073CCF2007A739F /* NSArray */,
 				40F3F0A11FEA030F00573FAA /* UIView */,
 				409ACE761FE8B53D00C3B72D /* UIAlertController */,
@@ -252,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4093E6CF2079DC7F00D833FB /* UIButton+ACKit.m in Sources */,
 				4068AB8320654DB0009698DD /* ACGuideManager.m in Sources */,
 				409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */,
 				40F3F0A41FEA032A00573FAA /* UIView+ACKit.m in Sources */,
