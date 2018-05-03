@@ -10,6 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, AC_TouchAnimateType) {
+    AC_TouchAnimateZoom,
+};
+
 @interface UIButton (ACKit)
 
 /**
@@ -27,6 +31,12 @@ NS_ASSUME_NONNULL_BEGIN
  @return 背景色，可为 nil
  */
 - (UIColor * _Nullable)ac_backgroundColorForState:(UIControlState)state;
+
+@end
+
+@interface UIButton(AC_TouchAnimation)
+
++ (instancetype)buttonWithTouchAnimateType:(AC_TouchAnimateType)animateType;
 
 @end
 

@@ -165,6 +165,38 @@ static NSString * const kColorForReserved = @"UIControlStateReserved";
 
 @end
 
+@implementation UIButton(AC_TouchAnimation)
 
++ (instancetype)buttonWithTouchAnimateType:(AC_TouchAnimateType)animateType {
+    UIButton *Self = [self buttonWithType:UIButtonTypeCustom];
+    if (Self) {
+        switch (animateType) {
+            case AC_TouchAnimateZoom:
+            {
+                [Self addTarget:Self action:@selector(touchUpInsideZoomOut:) forControlEvents:UIControlEventTouchUpInside];
+                [Self addTarget:Self action:@selector(touchDownToZoomIn:) forControlEvents:UIControlEventTouchDown];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }
+    return Self;
+}
+
+- (void)touchDownToZoomIn:(UIButton *)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        sender.transform = CGAffineTransformMakeScale(0.88, 0.88);
+    }];
+}
+
+- (void)touchUpInsideZoomOut:(UIButton *)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        sender.transform = CGAffineTransformMakeScale(1, 1);
+    }];
+}
+
+@end
 
 
