@@ -42,3 +42,13 @@
 }
 
 @end
+
+@implementation NSString (AC_AttributedString)
+
+- (NSMutableAttributedString *)ac_toAttribuedString {
+    
+    return [[NSMutableAttributedString alloc] initWithString:self];
+    
+}
+
+@end

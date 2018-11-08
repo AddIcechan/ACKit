@@ -46,8 +46,9 @@ static inline void safeSyncHandlerInMainThread(ACKitVoidHandler handler) {
 
 #pragma mark - 
 
-#import "NSString+ACKit.h"
 #import "NSArray+ACKit.h"
+#import "NSString+ACKit.h"
+#import "NSString+ACKit.h"
 
 #import "UIView+ACKit.h"
 #import "UIDevice+ACKit.h"

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4004D5B62081E62B00A4F406 /* TestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004D5B52081E62B00A4F406 /* TestManager.m */; };
 		404EC9222073CD13007A739F /* NSArray+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 404EC9212073CD13007A739F /* NSArray+ACKit.m */; };
 		4068AB8320654DB0009698DD /* ACGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4068AB8220654DB0009698DD /* ACGuideManager.m */; };
 		4093E6CF2079DC7F00D833FB /* UIButton+ACKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4093E6CE2079DC7F00D833FB /* UIButton+ACKit.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4004D5B42081E62B00A4F406 /* TestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestManager.h; sourceTree = "<group>"; };
+		4004D5B52081E62B00A4F406 /* TestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestManager.m; sourceTree = "<group>"; };
 		404EC9202073CD13007A739F /* NSArray+ACKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ACKit.h"; sourceTree = "<group>"; };
 		404EC9212073CD13007A739F /* NSArray+ACKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ACKit.m"; sourceTree = "<group>"; };
 		4068AB8120654DB0009698DD /* ACGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGuideManager.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				409ACE481FDE6E3500C3B72D /* AppDelegate.m */,
 				409ACE4A1FDE6E3500C3B72D /* ViewController.h */,
 				409ACE4B1FDE6E3500C3B72D /* ViewController.m */,
+				4004D5B42081E62B00A4F406 /* TestManager.h */,
+				4004D5B52081E62B00A4F406 /* TestManager.m */,
 				409ACE751FE7C84400C3B72D /* ACKit.h */,
 				4068AB8020654D8C009698DD /* Tools */,
 				409ACE5D1FDE74D600C3B72D /* Categories */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4004D5B62081E62B00A4F406 /* TestManager.m in Sources */,
 				4093E6CF2079DC7F00D833FB /* UIButton+ACKit.m in Sources */,
 				4068AB8320654DB0009698DD /* ACGuideManager.m in Sources */,
 				409ACE4C1FDE6E3500C3B72D /* ViewController.m in Sources */,

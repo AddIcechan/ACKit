@@ -27,4 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface NSString (AC_AttributedString)
+
+- (NSMutableAttributedString *)ac_toAttribuedString;
+
+@end
+
 NS_ASSUME_NONNULL_END

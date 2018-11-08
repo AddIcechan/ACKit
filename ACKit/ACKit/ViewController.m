@@ -8,6 +8,14 @@
 
 #import "ViewController.h"
 #import "ACKit.h"
+#import "TestManager.h"
+
+#define dispatch_main_sync_safe(block)\
+if ([NSThread isMainThread]) {\
+block();\
+} else {\
+dispatch_sync(dispatch_get_main_queue(), block);\
+}
 
 @interface ViewController ()
 
@@ -17,15 +25,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(20, 80, 40, 40)];
+    view1.backgroundColor = [UIColor yellowColor];
+//    [view1 ac_cornerWithRadius:20];
+    [self.view addSubview:view1];
+    
+    UIScreen.mainScreen.bounds.size.height;
+    
+    [TestManager.sharedInstance test2];
+    [TestManager.sharedInstance test1];
+    
+    TestManager.name = @"test";
+    NSLog(@"%@", TestManager.name);
+    
+    TestManager.name = @"test again";
+    NSLog(@"%@", TestManager.name);
+    
+    UIButton *btn = [UIButton buttonWithTouchAnimateType:AC_TouchAnimateZoom];
+    btn.frame = CGRectMake(0, 0, 100, 100);
+    btn.backgroundColor = UIColor.yellowColor;
+    [self.view addSubview:btn];
+    
     
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)testBtnPressed:(UIButton *)sender {
+    sender.selected = !sender.isSelected;
 }
-
 
 @end
